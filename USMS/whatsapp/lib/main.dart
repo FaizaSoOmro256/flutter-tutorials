@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/statuses.dart';
-
+import 'calls.dart';
 import 'chats.dart';
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'My App',
+      home: MyHomePage(),
+    );
+  }
+  
+  MyHomePage() {}
+}
 
 main() => runApp(const WhatsApp());
 
@@ -20,7 +31,7 @@ class _WhatsAppState extends State<WhatsApp> {
       theme: ThemeData(primarySwatch: Colors.teal),
       title: 'WhatsApp',
       home: DefaultTabController(
-        initialIndex: 1,
+        initialIndex: 2,
         length: 3,
         child: Scaffold(
           appBar: AppBar(
@@ -58,6 +69,7 @@ class _WhatsAppState extends State<WhatsApp> {
             children: <Widget>[
               Chats(),
               Statuses(),
+              Calls(),
               Center(
                 child: Text("Calls"),
               ),

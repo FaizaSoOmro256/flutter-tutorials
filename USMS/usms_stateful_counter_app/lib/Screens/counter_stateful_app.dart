@@ -32,6 +32,7 @@ class _CounterStatefulAppState extends State<CounterStatefulApp> {
               num++;
             });
 
+            // ignore: avoid_print
             print(num);
           },
           child: const Icon(Icons.add),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
+  // ignore: prefer_const_constructors
   runApp(TicTacToeApp());
 }
 
@@ -14,6 +15,7 @@ class TicTacToeApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      // ignore: prefer_const_constructors
       home: TicTacToeScreen(),
     );
   }
@@ -23,6 +25,7 @@ class TicTacToeScreen extends StatefulWidget {
   const TicTacToeScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _TicTacToeScreenState createState() => _TicTacToeScreenState();
 }
 
